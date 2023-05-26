@@ -1,0 +1,63 @@
+[
+    {
+      "name": "The Legend of Zelda: Breath of the Wild",
+      "publisher": "Nintendo",
+      "rating": 5,
+      "players": 1
+    },
+    {
+      "name": "Grand Theft Auto V",
+      "publisher": "Rockstar Games",
+      "rating": 4,
+      "players": 30
+    },
+    {
+      "name": "Overwatch",
+      "publisher": "Blizzard Entertainment",
+      "rating": 4,
+      "players": 6
+    },
+    {
+      "name": "Minecraft",
+      "publisher": "Mojang Studios",
+      "rating": 4,
+      "players": 1
+    },
+    {
+      "name": "The Witcher 3: Wild Hunt",
+      "publisher": "CD Projekt",
+      "rating": 5,
+      "players": 1
+    },
+    {
+      "name": "Fortnite",
+      "publisher": "Epic Games",
+      "rating": 3,
+      "players": 100
+    },
+    {
+      "name": "Red Dead Redemption 2",
+      "publisher": "Rockstar Games",
+      "rating": 5,
+      "players": 1
+    },
+    {
+      "name": "Call of Duty: Warzone",
+      "publisher": "Activision",
+      "rating": 3,
+      "players": 150
+    },
+    {
+      "name": "Super Mario Odyssey",
+      "publisher": "Nintendo",
+      "rating": 4,
+      "players": 1
+    },
+    {
+      "name": "Rocket League",
+      "publisher": "Psyonix",
+      "rating": 2,
+      "players": 8
+    }
+  ]
+  

@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting started 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -21,50 +21,65 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Version 1 Requirements
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Intro
+Business want a web app that manages a collection of games
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Requirements
+### List items
+list all games
+### Display Game Information
+Fields required:
+- Name of the game
+- Name of the game publisher
+- Rating of the game
+- Number of players the game supports
+### Search
+Ability to search for all fields on game
+### Add Games
+Add all game fields listed
 
-### `npm run eject`
+## Questions
+Q: Should the search just search on just the game title or on all fields? \
+A: Search all fields available.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Q: The players supported subject to just local or are they looking for online as well? \
+A: The user just wants a single number.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Q: Does the list need to be in an excel style table or do thay want them listed as Cards similar to an instagram post? \
+A: The layout should be listed as cards.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Q: Does the user need a drop down list of options rating options or just an input field? Drop down lists are less prone to user error. \
+A: Drop down field would be best.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Version 2 Improvements
+## Requirements
+### Improve search
+- Add a clear search button to reset search
+- Add some filters to the search:
+    - Filter by publisher
+    - Filter by ratings
+### Forms
+- Move edit and add form into modal
+- Validate there is no duplicate games added 
+### List items
+- add game art to card
+- add links to order the game
+- expand on players support to show local players and players online
+- Add pagination to the list. Limit 10 cards per page.
+### Bulk upload games
+- allow for a csv upload of games to be input into the system
+- csv upload would have to validate duplicate entries and invalide values
+- after uplaod results would display which records were not uploaded due to error and which were duplicates.
 
-## Learn More
+### Firebase connection
+- create a firestore database in firebase
+- connect firestore to react application: https://firebase.google.com/docs/web/setup 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Store games in database
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Deploy app on firebase
+Follow dock to deploy to firebase:
+https://medium.com/swlh/how-to-deploy-a-react-app-with-firebase-hosting-98063c5bf425
